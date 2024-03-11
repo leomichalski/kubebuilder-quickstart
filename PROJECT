@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: kubebuilder-quickstart
 repo: example.leomichalski.xyz/guestbook
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.leomichalski.xyz
+  group: webapp
+  kind: Guestbook
+  path: example.leomichalski.xyz/guestbook/api/v1
+  version: v1
 version: "3"
