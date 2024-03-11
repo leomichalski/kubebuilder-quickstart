@@ -57,6 +57,12 @@ which provide a reconcile function responsible for synchronizing resources until
 make install
 ```
 
+Alternatively
+
+```
+kubectl apply -k https://github.com/leomichalski/kubebuilder-quickstart/config/crd\?ref\=main
+```
+
 2. Run your controller (this will run in the foreground, so switch to a new terminal if you want to leave it running):
 
 ```sh
